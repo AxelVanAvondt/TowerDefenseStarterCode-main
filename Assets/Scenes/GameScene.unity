@@ -5873,6 +5873,63 @@ MonoBehaviour:
   - {fileID: 323639842879498588, guid: 39e1f3dcc5e81f94897dd7e2078a0d43, type: 3}
   - {fileID: 3117383159312442662, guid: 55cdd7949a809444b9670604cac057ca, type: 3}
   - {fileID: 4914599310578153163, guid: 2c0df38c7cbbce1428b755e99063d162, type: 3}
+--- !u!1 &1820776978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1820776980}
+  - component: {fileID: 1820776979}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1820776979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820776978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3699a2f00e54aad4590d9a6d0c84dc8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowerMenu: {fileID: 0}
+  Archer:
+  - {fileID: 4963848473883229678, guid: a6caa15076ae15b48bcd547a86ca4264, type: 3}
+  - {fileID: 5282180419470674713, guid: 4793569d8f826964f9215bab4a47e1c0, type: 3}
+  - {fileID: 7586891361773925407, guid: d444dc723110fca49935a76da81f379c, type: 3}
+  Sword:
+  - {fileID: 6433589582786381198, guid: 9233d7d3eac58c242becf98303ba725e, type: 3}
+  - {fileID: 9028894011243154727, guid: 42fb2cd65f2c01b40acf472de2ae3ff9, type: 3}
+  - {fileID: 619614500928146969, guid: 59951a92beb4cf544951a29e65cac643, type: 3}
+  Wizard:
+  - {fileID: 3458620716602309879, guid: 521ae3c3afc41f34c90ff59bc4aec54c, type: 3}
+  - {fileID: 7233375736440315196, guid: b1b9969790e6e1347ae3d7dfe516e8e5, type: 3}
+  - {fileID: 2906689625958485309, guid: cfefa819a4afe1141a35bd49fd22290b, type: 3}
+--- !u!4 &1820776980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820776978}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8658878, y: -0.36790165, z: -2.474834}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1824071965
 GameObject:
   m_ObjectHideFlags: 0
@@ -5980,3 +6037,4 @@ SceneRoots:
   - {fileID: 321964007}
   - {fileID: 1869446742}
   - {fileID: 1707267875}
+  - {fileID: 1820776980}

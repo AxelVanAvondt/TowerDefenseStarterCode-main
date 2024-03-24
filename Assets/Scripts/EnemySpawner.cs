@@ -27,11 +27,42 @@ public class EnemySpawner : MonoBehaviour
     {
         var newEnemy = Instantiate(Enemies[type], Path1[0].transform.position, Path1[0].transform.rotation);
         var script = newEnemy.GetComponentInParent<Enemy>();
+        script.path = path;
+        script.target = Path1[1];
+    }
+    private void SpawnTester()
+    {
+        SpawnEnemy(0, Path.Path1);
+    }
+    public GameObject RequestTarget(Path path, int index)
+    {
+        if (path == Path.Path1)
+        {
+            if (index + 1 >= Path1.Count)
+            {
+                return null;
+            }
+            else
+            {
+                return Path1[index + 1];
+            }
+        }
+        else
+        {
+            if (index + 1 >= Path2.Count)
+            {
+                return null;
+            }
+            else
+            {
+                return Path2[index + 1];
+            }
+        }
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        InvokeRepeating("SpawnTester", 1f, 1f);
     }
 
     // Update is called once per frame
