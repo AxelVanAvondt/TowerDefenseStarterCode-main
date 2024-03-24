@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 public class TowerMenu : MonoBehaviour
@@ -41,23 +42,23 @@ public class TowerMenu : MonoBehaviour
     }
     private void OnArcherButtonClicked()
     {
-
+        GameManager.instance.Build(TowerType.Archer, SiteLevel.level1);
     }
     private void OnSwordButtonClicked()
     {
-
+        GameManager.instance.Build(TowerType.Sword, SiteLevel.level1);
     }
     private void OnWizardButtonClicked()
     {
-
+        GameManager.instance.Build(TowerType.Wizard, SiteLevel.level1);
     }
     private void OnUpdateButtonClicked()
     {
-
+        GameManager.instance.Build(selectedSite.TowerType, selectedSite.Level + 1);
     }
     private void OnDestroyButtonClicked()
     {
-
+        GameManager.instance.Build(TowerType.Wizard, SiteLevel.Onbebouwd);
     }
     private void OnDestroy()
     {
@@ -157,8 +158,4 @@ public class TowerMenu : MonoBehaviour
 
         // Hint: use a switch for this logic.
     }
-    //private void OnArcherButtonClicked()
-    //{
-    //    GameManager.instance.Build(TowerType.Archer, SiteLevel.level1);
-    //}
 }
