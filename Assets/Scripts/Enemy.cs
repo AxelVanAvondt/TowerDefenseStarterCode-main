@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -36,6 +36,17 @@ public class Enemy : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+    }
+    public void Damage(int damage)
+    {
+        // lower the health value
+        health -= damage;
+        // if health is smaller or equal to zero 
+        // destroy the game object
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }
