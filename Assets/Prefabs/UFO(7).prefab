@@ -95,10 +95,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4914599310578153163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6d5ca771a2acb14192e5cd199bdca95, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a18c7873cab5c64194e15dc182b2859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 10
   health: 20
   points: 10
 --- !u!70 &8915196034672824087

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 516657580448391819}
   - component: {fileID: 2339286485770562409}
   m_Layer: 0
-  m_Name: barrack_level_1 (1)
+  m_Name: barrack_level_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,12 +94,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6433589582786381198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b62432a5e26cd949b7dd3c6326f3c4b, type: 3}
+  m_Script: {fileID: 11500000, guid: 656237d5bba5e3244ad2900bc5c57b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 1.5
-  attackRate: 2
-  attackDamage: 2
+  attackRate: 1
+  attackDamage: 1
   attackSize: 1
   bulletPrefab: {fileID: 5471468743341740648, guid: 30b8c9e27d24fb34993c5d561280692d, type: 3}
   type: 1

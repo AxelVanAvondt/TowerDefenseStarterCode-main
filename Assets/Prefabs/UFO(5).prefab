@@ -95,12 +95,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 323639842879498588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6d5ca771a2acb14192e5cd199bdca95, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a18c7873cab5c64194e15dc182b2859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
   health: 15
-  points: 3
+  points: 5
 --- !u!70 &-1764998828079205352
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

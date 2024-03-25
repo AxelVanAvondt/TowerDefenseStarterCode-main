@@ -94,12 +94,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5282180419470674713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b62432a5e26cd949b7dd3c6326f3c4b, type: 3}
+  m_Script: {fileID: 11500000, guid: 656237d5bba5e3244ad2900bc5c57b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 2
-  attackRate: 3
-  attackDamage: 3
+  attackRate: 2
+  attackDamage: 2
   attackSize: 2
   bulletPrefab: {fileID: 2286788054901355363, guid: b0f656135ae264c44aff1b135031bdbb, type: 3}
   type: 0
