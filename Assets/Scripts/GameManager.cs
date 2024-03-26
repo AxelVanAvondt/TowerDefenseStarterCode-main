@@ -26,6 +26,23 @@ public class GameManager : MonoBehaviour
     private int credits;
     private int health;
     private int currentWave;
+
+    private bool waveActive = false;
+
+    public void StartWave()
+    {
+        // increase the value of currentWave 
+        // change the label for the current wave in topMenu 
+        // change waveActive to true
+        currentWave++;
+        topMenu.SetWaveLabel("Wave: " + currentWave);
+        waveActive = true;
+    }
+    public void EndWave()
+    {
+        // change waveActive to false
+        waveActive = false;
+    }
     public void StartGame()
     {
         credits = 200;

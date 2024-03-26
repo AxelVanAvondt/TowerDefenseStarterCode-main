@@ -23,6 +23,41 @@ public class EnemySpawner : MonoBehaviour
     public List<GameObject> Path2;
     public List<GameObject> Enemies;
 
+    private int ufoCounter = 0;
+
+    public void StartWave(int number)
+    {
+        // reset counter 
+        ufoCounter = 0;
+        switch (number)
+        {
+            case 1:
+                InvokeRepeating("StartWave1", 1f, 1.5f);
+                break;
+        }
+    }
+    public void StartWave1()
+    {
+        ufoCounter++;
+        // leave some gaps 
+        if (ufoCounter % 6 <= 1) return;
+
+        if (ufoCounter < 30)
+        {
+            SpawnEnemy(0, Path.Path1);
+        }
+        else
+        {
+            // the last Enemy will be level 2 
+            SpawnEnemy(1, Path.Path1);
+        }
+        if (ufoCounter > 30)
+        {
+            CancelInvoke("StartWave1"); // the reverse of InvokeRepeating 
+            // depending on your singleton declaration, Get might be somthing else 
+            GameManager.instance.EndWave(); // let the gameManager know. 
+        }
+    }
     private void SpawnEnemy(int type, Path path)
     {
         var newEnemy = Instantiate(Enemies[type], Path1[0].transform.position, Path1[0].transform.rotation);
