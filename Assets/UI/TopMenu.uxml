@@ -1,8 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement style="flex-grow: 1; flex-direction: column; align-self: stretch; justify-content: flex-start; align-items: stretch;">
-        <ui:Label tabindex="-1" text="Wave" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Wave" />
-        <ui:Label tabindex="-1" text="Credits" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Credits" />
-        <ui:Label tabindex="-1" text="Gate Health" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GateHealth" />
-        <ui:Button text="►" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ArrowRight" style="height: 30px; width: 48px; text-overflow: ellipsis; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);" />
+    <ui:VisualElement style="flex-grow: 1; flex-direction: column-reverse; align-self: stretch; justify-content: flex-end; align-items: stretch; height: 57px;">
+        <ui:VisualElement style="flex-grow: 1; max-height: 40px; height: 40px; width: 175px; flex-direction: row-reverse; align-items: stretch; justify-content: flex-end;">
+            <ui:Label tabindex="-1" text="Gate Health" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GateHealth" style="width: 91px;" />
+            <ui:Button text="►" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ArrowRight" style="height: 30px; width: 48px; text-overflow: ellipsis; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; height: 40px; align-self: auto; justify-content: flex-start; width: 131px; min-height: initial; max-height: 40px; flex-direction: row;">
+            <ui:Label tabindex="-1" text="Credits" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Credits" />
+            <ui:Label tabindex="-1" text="Wave" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Wave" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

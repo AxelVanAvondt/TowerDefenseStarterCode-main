@@ -23,13 +23,16 @@ public class Projectile : MonoBehaviour
         {
             GameObject.Destroy(this);
         }
-        // next, move the projectile towards the target 
-        transform.position = target.position;
+        // next, move the projectile towards the target
+        transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+
         // finally, check if the distance between this object and
-        // the target is smaller than 0.2. If so, destroy this object. 
+        // the target is smaller than 0.2. If so, destroy this object.
+        Enemy enemy = target.GetComponent<Enemy>();
         if (Vector2.Distance(transform.position, target.transform.position) < 0.2f)
         {
             GameObject.Destroy(this);
+            enemy.Damage(damage);
         }
     }
 }

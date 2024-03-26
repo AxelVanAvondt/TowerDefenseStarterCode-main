@@ -94,9 +94,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5471468743341740648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90141eae266a51f4da0396173df3e6ec, type: 3}
+  m_Script: {fileID: 11500000, guid: faa0f120ff9fb0d4fa8095571c06552c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 4
-  damage: 4
+  speed: 0
+  damage: 0
