@@ -106,6 +106,7 @@ public class TowerMenu : MonoBehaviour
 
     public void EvaluateMenu()
     {
+        int credits = GameManager.instance.GetCredits();
         // return if selectedSite equals null
         if(selectedSite == null)
         {
@@ -128,6 +129,18 @@ public class TowerMenu : MonoBehaviour
         {
             case 0:
                 {
+                    if (credits <= GameManager.instance.GetCost(TowerType.Archer, SiteLevel.level1))
+                    {
+                        archerButton.SetEnabled(false);
+                    }
+                    if (credits <= GameManager.instance.GetCost(TowerType.Sword, SiteLevel.level1))
+                    {
+                        swordButton.SetEnabled(false);
+                    }
+                    if (credits <= GameManager.instance.GetCost(TowerType.Wizard, SiteLevel.level1))
+                    {
+                        wizardButton.SetEnabled(false);
+                    }
                     updateButton.SetEnabled(false);
                     destroyButton.SetEnabled(false);
                     break;
@@ -137,6 +150,10 @@ public class TowerMenu : MonoBehaviour
                     archerButton.SetEnabled(false);
                     swordButton.SetEnabled(false);
                     wizardButton.SetEnabled(false);
+                    if (credits <= GameManager.instance.GetCost(selectedSite.TowerType, SiteLevel.level2))
+                    {
+                        updateButton.SetEnabled(false);
+                    }
                     break;
                 }
             case SiteLevel.level2:
@@ -144,6 +161,10 @@ public class TowerMenu : MonoBehaviour
                     archerButton.SetEnabled(false);
                     swordButton.SetEnabled(false);
                     wizardButton.SetEnabled(false);
+                    if (credits <= GameManager.instance.GetCost(selectedSite.TowerType, SiteLevel.level3))
+                    {
+                        updateButton.SetEnabled(false);
+                    }
                     break;
                 }
             case SiteLevel.level3:

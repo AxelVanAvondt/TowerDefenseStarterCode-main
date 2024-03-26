@@ -35,6 +35,7 @@ public class Enemy : MonoBehaviour
             if (target == null)
             {
                 Destroy(gameObject);
+                GameManager.instance.AttackGate();
             }
         }
     }
@@ -47,6 +48,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            GameManager.instance.AddCredits(points);
         }
     }
 }
